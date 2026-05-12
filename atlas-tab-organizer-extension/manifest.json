@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Organizer",
+  "description": "Organize the current window's tabs into native tab groups using local rules.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Organize tabs",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "tabGroups"
+  ]
+}
