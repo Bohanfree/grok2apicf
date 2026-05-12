@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Organizer</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Tab Organizer</h1>
+        <p>Preview and apply native tab groups for the current window.</p>
+      </header>
+
+      <section class="controls" aria-label="Controls">
+        <button id="analyzeSmart" type="button">Smart preview</button>
+        <button id="analyzeDomain" type="button" class="secondary">By domain</button>
+        <button id="applyPlan" type="button" disabled>Apply groups</button>
+      </section>
+
+      <section class="status" id="status" role="status">Open tabs, then choose a preview mode.</section>
+
+      <section class="summary" id="summary" hidden></section>
+
+      <section class="plan" id="plan" hidden>
+        <div class="plan-header">
+          <h2>Plan</h2>
+          <button id="copyPlan" type="button" class="link-button">Copy JSON</button>
+        </div>
+        <div id="groups"></div>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
